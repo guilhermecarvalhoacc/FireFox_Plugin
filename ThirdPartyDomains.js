@@ -3,8 +3,8 @@ const showDomains = async(tabs) => {
     const response = await browser.tabs.sendMessage(tab.id, {
         method: "getLinks",
     });
-    const Numero_Doms = document.getElementById("third-party-domains-number");
-    var dom = document.getElementById("third-party-domains");
+    const Numero_Doms = document.getElementById("NumberDomains");
+    var dom = document.getElementById("TP_Domains");
     var num_doms  = response.data.length;
     var domains = response.data;
     for (let domain of domains){
@@ -13,7 +13,7 @@ const showDomains = async(tabs) => {
         li.appendChild(content);
         dom.appendChild(li);
     }
-    let content = document.createTextNode(num_doms + " third party links in this page!");
+    let content = document.createTextNode(num_doms + " third party links na Página!");
     Numero_Doms.appendChild(content);
     Numero_Doms.setAttribute("value", num_doms);
 };
