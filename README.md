@@ -24,3 +24,4 @@ Analises Feitas:
 ![image](https://user-images.githubusercontent.com/55805333/205163807-d76327aa-8569-4aba-94d9-b2b168de961b.png)
 
 
+Referências para o projeto : https://developer.mozilla.org/en-US/
