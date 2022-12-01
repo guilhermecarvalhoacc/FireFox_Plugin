@@ -1,9 +1,11 @@
 html, body{
     width: 500px;
+    background-color: blanchedalmond;
 }
 
 .panel {
     padding: 5px;
+    color : rgb(170, 2, 2);
 }
 
 li {
